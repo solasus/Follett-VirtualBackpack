@@ -12,7 +12,7 @@ jQuery(function($) {
 		var cbname = $.cookie('cbname');
 		if (cbname.substring(0, 1) == "*") { // set action for redirect to staging
 			cbname = cbname.substr(1);
-			$('#cblogin').attr("action","https://www.classbook.com/apps/virtualbackpackv2/default.aspx");
+			$('#cblogin').attr("action","http://www.classbook.com/apps/virtualbackpackv2/default.aspx");
 		}
 		$('#uname').val(cbname);
 		$('#pword').val($.cookie('cbpw'));

@@ -57,7 +57,7 @@ $(document).on('pagebeforeshow','#settings' ,function(e,data){
 		var target = "https://virtualbackpack.follett.com/default.aspx";
 		var cbname = $.cookie('cbname');
 		if (cbname.substring(0, 1) == "*") { // set action for redirect to staging
-			target = "https://www.classbook.com/apps/virtualbackpackv2/default.aspx";
+			target = "http://www.classbook.com/apps/virtualbackpackv2/default.aspx";
 		}
 		$('#webapp').attr('src',target);
 	});
