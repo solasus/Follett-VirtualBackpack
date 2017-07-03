@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.follett.virtualbackpack"
+    version   = "1.0.1">
+  <preference name="AllowInlineMediaPlayback" value="false" />
+  <preference name="AutoHideSplashScreen" value="true" />
+  <preference name="BackupWebStorage" value="cloud" />
+  <preference name="DisallowOverscroll" value="false" />
+  <preference name="EnableViewportScale" value="false" />
+  <!-- <preference name="FadeSplashScreen" value="true" /> --> 
+  <!-- <preference name="FadeSplashScreenDuration" value=".25" /> -->
+  <preference name="KeyboardDisplayRequiresUserAction" value="true" />
+  <preference name="MediaPlaybackRequiresUserAction" value="false" />
+  <!-- <preference name="ShowSplashScreenSpinner" value="true" /> -->
+  <preference name="SuppressesIncrementalRendering" value="false" />
+  <preference name="TopActivityIndicator" value="gray" />
+  <preference name="GapBetweenPages" value="0" />
+  <preference name="PageLength" value="0" />
+  <preference name="<Pa></Pa>ginationBreakingMode" value="page" />
+  <preference name="PaginationMode" value="unpaginated" />
+  <feature name="LocalStorage">
+    <param name="ios-package" value="CDVLocalStorage" />
+  </feature>
+  <name>Follett Virtual Backpack</name>
+  <description> A sample Apache Cordova application that responds to the deviceready event. </description>
+  <author href="https://solasus.com" email="kevin@solasus.com"> Kevin Brady </author>
+  <preference name="phonegap-version" value="3.3.0" />
+  <preference name="target-device" value="tablet" />
+  <preference name="fullscreen" value="true" />
+  <gap:config-file platform="ios" parent="UIStatusBarHidden" overwrite="true">
+    <true/>
+  </gap:config-file>
+  <content src="index.html" />
+  <access origin="*" />
+  <preference name="phonegap-version" value="3.3.0" />
+  <preference name="target-device" value="tablet" />
+  <preference name="fullscreen" value="true" />
+  
+  <!-- Define app icon for each platform. --> 
+  <!--App icons -->
+  <platform name="ios"> 
+   <icon src="images/icon-20.png" width="20" height="20" />
+   <icon src="images/icon-20@2x.png" width="40" height="40" />
+   <icon src="images/icon-20@3x.png" width="60" height="60" />
+	  
+   <icon src="images/icon-29.png" width="29" height="29" />
+   <icon src="images/icon-29@2x.png" width="58" height="58" />
+   <icon src="images/icon-29@3x.png" width="87" height="87" />
+	  
+   <icon src="images/icon-40.png" width="40" height="40" />
+   <icon src="images/icon-40@2x.png" width="80" height="80" />
+   <icon src="images/icon-40@3x.png" width="120" height="120" />
+	  
+   <icon src="images/icon-50.png" width="50" height="50" />
+   <icon src="images/icon-50@2x.png" width="100" height="100" />
+	  
+   <icon src="images/icon-57.png" width="57" height="57" />
+   <icon src="images/icon-57@2x.png" width="114" height="114" /> 
+	  
+   <icon src="images/icon-60.png" width="60" height="60" />
+   <icon src="images/icon-60@2x.png" width="120" height="120" />
+   <icon src="images/icon-60@3x.png" width="180" height="180" />
+	  
+   <icon src="images/icon-72.png" width="72" height="72" />
+   <icon src="images/icon-72@2x.png" width="144" height="144" /> 
+	  
+   <icon src="images/icon-76.png" width="76" height="76" />
+   <icon src="images/icon-76@2x.png" width="152" height="152" /> 
+	  
+   <icon src="images/icon-83.5@2x.png" width="167" height="167" />  
+	  
+   <icon src="images/icon-144.png" width="144" height="144" />
+   <icon src="images/icon-144@2x.png" width="288" height="288" /> 
+	  
+   <icon src="images/icon-152.png" width="152" height="152" />
+   <icon src="images/icon-152@2x.png" width="304" height="304" />     
+  </platform>
+  
+  <!-- Define app splash screen -->
+  <gap:splash src="splash.png" />
+</widget>
