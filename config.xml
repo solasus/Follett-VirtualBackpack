@@ -33,9 +33,6 @@
   </gap:config-file>
   <content src="index.html" />
   <access origin="*" />
-  <preference name="phonegap-version" value="3.3.0" />
-  <preference name="target-device" value="tablet" />
-  <preference name="fullscreen" value="true" />
   
   <!-- Define app icon for each platform. --> 
   <!--App icons -->
