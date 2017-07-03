@@ -25,7 +25,7 @@
   <name>Follett Virtual Backpack</name>
   <description> A sample Apache Cordova application that responds to the deviceready event. </description>
   <author href="https://solasus.com" email="kevin@solasus.com"> Kevin Brady </author>
-  <preference name="phonegap-version" value="3.3.0" />
+  <preference name="phonegap-version" value="6.5.0" />
   <preference name="target-device" value="tablet" />
   <preference name="fullscreen" value="true" />
   <gap:config-file platform="ios" parent="UIStatusBarHidden" overwrite="true">
