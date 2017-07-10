@@ -34,6 +34,7 @@
             <p>Welcome to the Follett Virtual Backpack</p>
             <p>Please log in with the credentials sent to you via email or distributed by your school.</p>
             
+          <!--
           <form id="cblogin" name="cblogin">
             <p>
               <label for="uname">Email Address:</label>
@@ -45,6 +46,20 @@
             <p>&nbsp; </p>
             <p><a href="#pass">Forgot Password</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#changepass">Change Password</a> </p>
           </form>
+          -->
+          
+          <form id="cblogin" name="cblogin" method="post" action="https://virtualbackpack.follett.com/default.aspx">
+			<label for="uname">Email Address:</label>
+			<input type="email" name="ctl00$ContentPlaceHolder1$tbEmail" id="uname" value="" />         
+			<label for="pword">Password:</label>
+			<input type="password" data-clear-btn="false" name="ctl00$ContentPlaceHolder1$tbPassword" id="pword" value="" autocomplete="off" />
+			<input type="hidden" name="ctl00$ContentPlaceHolder1$hdnRegisterTo" value="" />
+			<input type="hidden" name="ctl00$ContentPlaceHolder1$hdnApp" value="true" />
+			<input type="hidden" name="ctl00$ContentPlaceHolder1$btnSubmit" value="Login" />
+			<input type="hidden" name="sourceApp" value="1" />
+			<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="">
+			<input type="submit" value="Submit" data-inline="true" />
+		</form>
           	
     	</div>
     </div><!-- /content -->

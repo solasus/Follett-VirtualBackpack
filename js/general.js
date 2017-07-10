@@ -49,7 +49,8 @@ $(document).on('pagebeforeshow','#settings' ,function(e,data){
 		$.cookie('cbpw', $('#pword').val(), { expires: 9999 });
 		// redirect to #app
         //alert('123');
-        $.mobile.navigate('#app');
+       //  $.mobile.navigate('#app');
+		$('form#cblogin').submit();
 	});
 	
 	$('#app a#applink').click(function(e){ 
