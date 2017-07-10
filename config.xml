@@ -2,7 +2,7 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
     id        = "com.follett.virtualbackpack"
-    version   = "1.0.6">
+    version   = "1.0.6a">
   
   <name>Follett Virtual Backpack</name>
   <description> A sample Apache Cordova application that responds to the deviceready event. </description>
@@ -47,7 +47,7 @@
   </gap:config-file>
   -->
   
-  <content src="index.html" />
+  <content src="index_test.html" />
   <access origin="*" />
   
   <!-- Define app icon for each platform. --> 
