@@ -1,28 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<widget xmlns = "http://www.w3.org/ns/widgets"
-    xmlns:gap = "http://phonegap.com/ns/1.0"
-    id        = "com.follett.virtualbackpack"
-    version   = "1.0.6b">
-  
-  <name>Follett Virtual Backpack</name>
-  <description> Organize the eBooks that you purchased from your school's bookstore. </description>
-  <author href="https://solasus.com" email="kevin@solasus.com"> Kevin Brady </author>
-  
+<?xml version="1.0" encoding="UTF-8"?>
 
-  <!-- <preference name="FadeSplashScreen" value="true" /> --> 
-  <!-- <preference name="FadeSplashScreenDuration" value=".25" /> -->
-  <!-- <preference name="ShowSplashScreenSpinner" value="true" /> -->
-<!--
-  <feature name="LocalStorage">
-    <param name="ios-package" value="CDVLocalStorage" />
-  </feature>
-  -->
-  
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml 
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.harken.tradeatthefront"
+        version   = "1.1.0">
+ -->
+<!-- different name for android store -->
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.harken.tradeatthefrontapp"
+        version   = "1.1.7">
+ 
+
+    <name>Harken Trade-At-The-Front App</name>
+
+    <description>
+        Trade-At-The-Front consolidates resources previously available in multiple locations with new communication tools Harken launches here for the first time in a single easy-to-use package. 
+    </description>
+
+    <author href="http://harken.com" email="support@harken.com">
+        Harken Team
+    </author>
+
     <preference name="permissions"                value="none"/>
 
     <!-- Customize your app and platform with the preference element. -->
     <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
-    <preference name="target-device"              value="tablet" />      <!-- all: possible values handset, tablet, or universal -->
+    <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
     <preference name="fullscreen"                 value="false" />           <!-- all: hides the status bar at the top of the screen -->
     <preference name="webviewbounce"              value="true" />           <!-- ios: control whether the screen 'bounces' when scrolled beyond the top -->
     <preference name="prerendered-icon"           value="true" />           <!-- ios: if icon is prerendered, iOS will not apply it's gloss to the app's icon on the user's home screen -->
@@ -36,98 +41,83 @@
     <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
 	<preference name="debug"    				  value="false" /> 
     <!-- Plugins -->
-  
-  <!--
-  <preference name="AutoHideSplashScreen" value="true" />
-  <preference name="AllowInlineMediaPlayback" value="false" />
-  <preference name="BackupWebStorage" value="cloud" />
-  <preference name="SuppressesIncrementalRendering" value="false" />
-  <preference name="TopActivityIndicator" value="gray" />
-  <preference name="GapBetweenPages" value="0" />
-  <preference name="PageLength" value="0" />
-  <preference name="PaginationBreakingMode" value="page" />
-  <preference name="PaginationMode" value="unpaginated" />
-  <preference name="InAppBrowserStorageEnabled" value="true" />
-  <preference name="UIStatusBarHidden" value="true" />
-  <preference name="KeyboardDisplayRequiresUserAction" value="true" />
-  <preference name="MediaPlaybackRequiresUserAction" value="false" />
-  -->
-  
-  <!-- 
-    <gap:config-file platform="ios" parent="UIStatusBarHidden" overwrite="true">
-    <true/>
-  </gap:config-file>
-  -->
-  
-  <!--
-  <content src="index_test.html" />
-  -->
-  
-		<access origin="*"/>
-		<!-- Added the following intents to support the removal of whitelist code from base cordova to a plugin -->
-		<!-- Whitelist configuration. Refer to https://cordova.apache.org/docs/en/edge/guide_appdev_whitelist_index.md.html -->
-		<plugin name="cordova-plugin-whitelist" version="1" />
-		<allow-intent href="http://*/*" />
-		<allow-intent href="https://*/*" />
-		<allow-intent href="tel:*" />
-		<allow-intent href="sms:*" />
-		<allow-intent href="mailto:*" />
-		<allow-intent href="geo:*" />
-		<platform name="android">
-			<allow-intent href="market:*" />
-		</platform>
-		<platform name="ios">
-			<allow-intent href="itms:*" />
-			<allow-intent href="itms-apps:*" />
-		</platform>
-  
-  <!-- Define app icon for each platform. --> 
-  <!--App icons -->
-  <platform name="ios"> 
-   <icon src="images/icon-20.png" width="20" height="20" />
-   <icon src="images/icon-20@2x.png" width="40" height="40" />
-   <icon src="images/icon-20@3x.png" width="60" height="60" />
-	  
-   <icon src="images/icon-29.png" width="29" height="29" />
-   <icon src="images/icon-29@2x.png" width="58" height="58" />
-   <icon src="images/icon-29@3x.png" width="87" height="87" />
-	  
-   <icon src="images/icon-40.png" width="40" height="40" />
-   <icon src="images/icon-40@2x.png" width="80" height="80" />
-   <icon src="images/icon-40@3x.png" width="120" height="120" />
-	  
-   <icon src="images/icon-50.png" width="50" height="50" />
-   <icon src="images/icon-50@2x.png" width="100" height="100" />
-	  
-   <icon src="images/icon-57.png" width="57" height="57" />
-   <icon src="images/icon-57@2x.png" width="114" height="114" /> 
-	  
-   <icon src="images/icon-60.png" width="60" height="60" />
-   <icon src="images/icon-60@2x.png" width="120" height="120" />
-   <icon src="images/icon-60@3x.png" width="180" height="180" />
-	  
-   <icon src="images/icon-72.png" width="72" height="72" />
-   <icon src="images/icon-72@2x.png" width="144" height="144" /> 
-	  
-   <icon src="images/icon-76.png" width="76" height="76" />
-   <icon src="images/icon-76@2x.png" width="152" height="152" /> 
-	  
-   <icon src="images/icon-83.5@2x.png" width="167" height="167" />  
-	  
-   <icon src="images/icon-144.png" width="144" height="144" />
-   <icon src="images/icon-144@2x.png" width="288" height="288" /> 
-	  
-   <icon src="images/icon-152.png" width="152" height="152" />
-   <icon src="images/icon-152@2x.png" width="304" height="304" /> 
-   
-   <splash src="Default@2x~universal~anyany.png" />
-   <splash src="Default@2x~universal~comany.png" />    
-   
-  </platform>
-  
-  <!-- Define app splash screen -->
-<!--
-  <gap:splash src="splash.png" />
--->
+
+    <!-- Core plugins -->
+    <!-- PLUGINS REMOVED
+    <gap:plugin name="org.apache.cordova.battery-status" />
+    <gap:plugin name="org.apache.cordova.camera" />
+    <gap:plugin name="org.apache.cordova.media-capture" />
+    <gap:plugin name="org.apache.cordova.console" />
+    <gap:plugin name="org.apache.cordova.contacts" />
+    <gap:plugin name="org.apache.cordova.device" />
+    <gap:plugin name="org.apache.cordova.device-motion" />
+    <gap:plugin name="org.apache.cordova.device-orientation" />
+    <gap:plugin name="org.apache.cordova.dialogs" />
+    <gap:plugin name="org.apache.cordova.file" />
+    <gap:plugin name="org.apache.cordova.file-transfer" />
+    <gap:plugin name="org.apache.cordova.geolocation" />
+    <gap:plugin name="org.apache.cordova.globalization" />
+    <gap:plugin name="org.apache.cordova.inappbrowser" /> 
+    <gap:plugin name="org.apache.cordova.media" />
+    <gap:plugin name="org.apache.cordova.network-information" />
+    <gap:plugin name="org.apache.cordova.splashscreen" />
+    <gap:plugin name="org.apache.cordova.vibration" />
+	
+    <gap:plugin name="org.apache.cordova.statusbar" />
+    <preference name="StatusBarOverlaysWebView" value="true" /> 
+	<preference name="StatusBarBackgroundColor" value="#000000" />
+	<preference name="StatusBarStyle" value="lightcontent" />
+	 --> 
+
+	<!-- Define app icon for each platform. -->
+    <icon src="icon.png" />
+	<icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:qualifier="ldpi" />
+    <icon src="res/icon/android/icon-48-mdpi.png"   gap:platform="android"    gap:qualifier="mdpi" />
+    <icon src="res/icon/android/icon-72-hdpi.png"   gap:platform="android"    gap:qualifier="hdpi" />
+    <icon src="res/icon/android/icon-96-xhdpi.png"  gap:platform="android"    gap:qualifier="xhdpi" />
+	<icon src="res/icon/blackberry/icon-80.png"     gap:platform="blackberry" />
+    <icon src="res/icon/blackberry/icon-80.png"     gap:platform="blackberry" gap:state="hover"/>
+    <icon src="res/icon/ios/icon-57.png"            gap:platform="ios"        width="57" height="57" />
+    <icon src="res/icon/ios/icon-72.png"            gap:platform="ios"        width="72" height="72" />
+    <icon src="res/icon/ios/icon-57-2x.png"         gap:platform="ios"        width="114" height="114" />
+    <icon src="res/icon/ios/icon-72-2x.png"         gap:platform="ios"        width="144" height="144" />
+    <icon src="res/icon/webos/icon-64.png"          gap:platform="webos" />
+    <icon src="res/icon/windows-phone/icon-48.png"  gap:platform="winphone" />
+    <icon src="res/icon/windows-phone/icon-173.png" gap:platform="winphone"   gap:role="background" />
+
+    <!-- Define app splash screen for each platform. -->
+	<gap:splash src="res/screen/android/screen-ldpi-portrait.png"       gap:platform="android" gap:qualifier="port-ldpi" />
+    <gap:splash src="res/screen/android/screen-mdpi-portrait.png"       gap:platform="android" gap:qualifier="port-mdpi" />
+    <gap:splash src="res/screen/android/screen-hdpi-portrait.png"       gap:platform="android" gap:qualifier="port-hdpi" />
+    <gap:splash src="res/screen/android/screen-xhdpi-portrait.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
+	<gap:splash src="res/screen/blackberry/screen-225.png"              gap:platform="blackberry" />
+    <gap:splash src="res/screen/ios/screen-iphone-portrait.png"         gap:platform="ios"     width="320" height="480" />
+    <gap:splash src="res/screen/ios/screen-iphone-portrait-2x.png"      gap:platform="ios"     width="640" height="960" />
+    <gap:splash src="res/screen/ios/screen-iphone-portrait-568h-2x.png" gap:platform="ios"     width="640" height="1136" />
+    <gap:splash src="res/screen/ios/screen-ipad-portrait.png"           gap:platform="ios"     width="768" height="1024" />
+    <gap:splash src="res/screen/ios/screen-ipad-landscape.png"          gap:platform="ios"     width="1024" height="768" />
+    <gap:splash src="res/screen/windows-phone/screen-portrait.jpg"      gap:platform="winphone" />
+	 
+	<gap:config-file platform="ios" parent="CFBundleShortVersionString">
+    	<string>111</string>
+    </gap:config-file>
+
+    <access origin="*"/>
+    <!-- Added the following intents to support the removal of whitelist code from base cordova to a plugin -->
+    <!-- Whitelist configuration. Refer to https://cordova.apache.org/docs/en/edge/guide_appdev_whitelist_index.md.html -->
+    <plugin name="cordova-plugin-whitelist" version="1" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
 
 </widget>

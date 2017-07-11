@@ -1,9 +1,0 @@
-/* CSS Document */
-
-.ui-content .content { padding:0; }
-.webapp.ui-content { padding:0; height:100%; }
-iframe.webapp { border:0; width:100%; }
-div.middle { max-width:525px; margin:0 auto; }
-div.middle .ui-input-text { max-width:360px; }
-.instructions { margin-top:75px; }
-#helpfile { border:0; width:700px; height:600px; overflow-x:hidden; overflow-y:scroll; }
