@@ -1,73 +1,14 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Virtual Backpack</title>
-
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <script type="text/javascript" src="cordova.js"></script>
-
+<meta charset="UTF-8">
+<title>Follet Virtual Backpack</title>
+<link rel="stylesheet" type="text/css" href="assets/styles.css">
+<script src="assets/jquery.min.js"></script>
+<script src="cordova.js"></script>
+<script src="assets/general.js"></script>
 </head>
-
 <body>
-
-<!-- Start of settings page: #settings -->
-<div data-role="page" id="settings" data-theme="a">
-
-
-
-	<div role="main" class="ui-content">
-    	<div class="middle"> <a href="#site"><img src="images/classbook_logo.png" width="300" height="95" alt=""/></a>
-          <h2>Welcome to the Virtual Backpack</h2>
-            <p>Welcome to the Follett Virtual Backpack</p>
-            <p>Please log in with the credentials sent to you via email or distributed by your school.</p>
-            
-          <!--
-          <form id="cblogin" name="cblogin">
-            <p>
-              <label for="uname">Email Address:</label>
-              <input type="email" name="uname" id="uname" value="" />         
-              <label for="pword">Password:</label>
-              <input type="password" data-clear-btn="false" name="pword" id="pword" value="" autocomplete="off" />
-              <input type="submit" value="Submit" data-inline="true" />
-            </p>
-            <p>&nbsp; </p>
-            <p><a href="#pass">Forgot Password</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#changepass">Change Password</a> </p>
-          </form>
-          -->
-          
-          <form id="cblogin" name="cblogin" method="post" action="https://virtualbackpack.follett.com/default.aspx">
-			<label for="uname">Email Address:</label>
-			<input type="email" name="ctl00$ContentPlaceHolder1$tbEmail" id="uname" value="" />         
-			<label for="pword">Password:</label>
-			<input type="password" data-clear-btn="false" name="ctl00$ContentPlaceHolder1$tbPassword" id="pword" value="" autocomplete="off" />
-			<input type="hidden" name="ctl00$ContentPlaceHolder1$hdnRegisterTo" value="" />
-			<input type="hidden" name="ctl00$ContentPlaceHolder1$hdnApp" value="true" />
-			<input type="hidden" name="ctl00$ContentPlaceHolder1$btnSubmit" value="Login" />
-			<input type="hidden" name="sourceApp" value="1" />
-			<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="">
-			<input type="submit" value="Submit" data-inline="true" />
-		</form>
-         	
-			<a href="https://virtualbackpack.follett.com/default.aspx">home page</a><br>
-         	
-         	<iframe id="webapp2a" class="webapp2a" height="300" width="400" src="https://virtualbackpack.follett.com/forgotpassword.aspx"></iframe>
-         	<iframe id="webapp2b" class="webapp2a" height="300" width="400" src="https://solasus.com"></iframe>
-         	<iframe id="webapp2c" class="webapp2a" height="300" width="400" src="https://www.google.com/"></iframe>	
-         	
-          	
-    	</div>
-    </div><!-- /content -->
-	<!-- <div data-role="footer"></div><!-- /footer -->
-</div><!-- /page settings -->
-
-
-
-
-
-
+<div class="page"><iframe id="appframe" frameborder="0"></iframe></div>
 </body>
 </html>

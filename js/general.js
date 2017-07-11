@@ -1,75 +1,28 @@
-// JavaScript Document
-
-function setHeight(){
-	var ifheight = $(window).height() - 50;
-	$('iframe.webapp').height(ifheight);
-}
-
-function cbLogin() {
-	var cbname = $.cookie('cbname');
-	var cbpw = $.cookie('cbpw');
-	if (!cbname) { // no cookie
-		$.mobile.navigate('#settings');
-	} else { // yes cookie
-		// post to ektron
-		$('#webapp').attr('src', 'login.html')
-	}
-}
-
-function openLink(url) {
-	alert(url);
-	ref = window.open('http://google.com', '_system');
-}
-
-$(document).on('pagebeforeshow','#app' ,function(e,data){    
-	setHeight();
-	cbLogin()
-});
-
-$( window ).on( "orientationchange", function( event ) {
-	setHeight();
-});
-
-$(document).on('pagebeforeshow','#settings' ,function(e,data){    
-	// fill fields if vals exists
-	var cbname = $.cookie('cbname');
-	var cbpw = $.cookie('cbpw');
-	if (cbname != '' && cbpw != ''){
-		$('#uname').val($.cookie('cbname'));
-		$('#pword').val($.cookie('cbpw'));
-	}
-	// submit and redirect
-	$('form#cblogin').off('submit').on('submit', function( event ) {
-		event.preventDefault();
-		// clear existing
-		$.removeCookie('cbname');
-		$.removeCookie('cbpw');
-		// save new cookie
-		$.cookie('cbname', $('#uname').val(), { expires: 9999 });
-		$.cookie('cbpw', $('#pword').val(), { expires: 9999 });
-		// redirect to #app
-        //alert('123');
-       //  $.mobile.navigate('#app');
-		$('form#cblogin').submit();
-	});
+jQuery( document ).ready(function( $ ) {
 	
-	$('#app a#applink').click(function(e){ 
-		e.preventDefault();
-		var target = "https://virtualbackpack.follett.com/default.aspx";
-		var cbname = $.cookie('cbname');
-		if (cbname.substring(0, 1) == "*") { // set action for redirect to staging
-			target = "http://www.classbook.com/apps/virtualbackpackv2/default.aspx"; 
-		}
-		$('#webapp').attr('src',target);
-	});
+	var iframe = document.getElementById("appframe");
+	iframe.onload = function(){
+		iframe.contentWindow.cordova = window.cordova;
+	};
+	iframe.src = 'http://virtualbackpack.follett.com/';
+
+	function pageSize() {
+		var pgWidth = $(window).width();
+		var pgHeight = $(window).height();
+		$('.page').css({'width':pgWidth+'px','height':pgHeight+'px'});
+		$('#appframe').css({'width':pgWidth+'px','height':pgHeight+'px'});
+	}
+	pageSize();
+
+	function fadeFrame() {
+		$('#appframe').css({'opacity':'1'});
+	}
+	setTimeout(fadeFrame, 3000);
+
+	var resizeId;
+	$(window).resize(function() {
+		clearTimeout(resizeId);
+		resizeId = setTimeout(pageSize, 150);
+	}); 
 	
 });
-
-$(document).on('pagebeforeshow','#pass' ,function(e,data){    
-	setHeight();
-});
-
-$(document).on('pagebeforeshow','#site' ,function(e,data){    
-	setHeight();
-});
-
