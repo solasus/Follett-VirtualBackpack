@@ -120,7 +120,8 @@
   </platform>
   
   <!-- Define app splash screen -->
-  <gap:splash src="splash.png" />
-
+  <gap:splash src="images/splash.png" gap:platform="ios" width="480" height="480" />
+  <gap:splash src="images/screen-ipad-portrait.png"  gap:platform="ios" width="768" height="1024" />
+  <gap:splash src="images/screen-ipad-landscape.png" gap:platform="ios" width="1024" height="768" />
 
 </widget>
