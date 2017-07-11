@@ -42,6 +42,8 @@
 	<preference name="debug"    				  value="false" /> 
     <!-- Plugins -->
     
+    <preference name="phonegap-version" value="3.7.0" />
+    
     <plugin name="cordova-plugin-battery-status" spec="~1.2.4" />
     <plugin name="cordova-plugin-console" spec="~1.0.7" />
     <plugin name="cordova-plugin-device" spec="~1.1.6" />
