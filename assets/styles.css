@@ -1,9 +1,0 @@
-/* CSS Document */
-html, body { background:#000 url(../res/background.jpg) center no-repeat; background-attachment:fixed; padding:0; margin:0; }
-.page { background:transparent url(../res/harken-logo.png) center no-repeat; background-attachment:fixed; padding:0; margin:0; }
-#appframe { opacity:0; background:#000000; 
--webkit-transition: opacity 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
-   -moz-transition: opacity 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
-     -o-transition: opacity 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
-        transition: opacity 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); /* ease (default) */
-}

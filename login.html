@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-cookie/jquery.cookie.js"></script>
+<script>
+jQuery(function($) {
+	$( document ).ready(function() {
+		var cbname = $.cookie('cbname');
+		if (cbname.substring(0, 1) == "*") { // set action for redirect to staging
+			cbname = cbname.substr(1);
+			$('#cblogin').attr("action","http://www.classbook.com/apps/virtualbackpackv2/default.aspx");
+		}
+		$('#uname').val(cbname);
+		$('#pword').val($.cookie('cbpw'));
+		$('#cblogin').submit();
+	});
+});
+</script>
+<style>
+body { width:100%; text-align:center; background:#000000; }
+#cblogin { text-indent:-2000em; }
+.loading { width:46px; height:46px; margin:100px auto auto; }
+</style>
+</head>
+<body class="login-page">
+<img class="loading" src="js/jquery-mobile/images/ajax-loader.gif" width="46" height="46" alt=""/>
+<form id="cblogin" name="cblogin" method="post" action="https://virtualbackpack.follett.com/default.aspx">
+    <label for="uname">Email Address:</label>
+    <input type="email" name="ctl00$ContentPlaceHolder1$tbEmail" id="uname" value="" />         
+    <label for="pword">Password:</label>
+    <input type="password" data-clear-btn="false" name="ctl00$ContentPlaceHolder1$tbPassword" id="pword" value="" autocomplete="off" />
+    <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnRegisterTo" value="" />
+    <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnApp" value="true" />
+    <input type="hidden" name="ctl00$ContentPlaceHolder1$btnSubmit" value="Login" />
+    <input type="hidden" name="sourceApp" value="1" />
+    <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="">
+    <input type="submit" value="Submit" data-inline="true" />
+</form>
+
+</body>
+</html>
