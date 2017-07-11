@@ -47,6 +47,10 @@
   </gap:config-file>
   -->
   
+  <feature name="InAppBrowser">
+    <param name="ios-package" value="CDVInAppBrowser" />
+  </feature>
+  
   <content src="index_test.html" />
   <access origin="*" />
   
