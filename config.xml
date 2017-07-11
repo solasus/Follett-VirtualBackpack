@@ -127,8 +127,8 @@
   </platform>
   
   <!-- Define app splash screen -->
-<!--
+
   <gap:splash src="splash.png" />
--->
+
 
 </widget>
