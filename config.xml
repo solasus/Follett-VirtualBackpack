@@ -8,7 +8,7 @@
   <description> Organize the eBooks that you purchased from your school's bookstore. </description>
   <author href="https://solasus.com" email="kevin@solasus.com"> Kevin Brady </author>
   
-  <preference name="phonegap-version" value="cli-5.1.1" />
+  <preference name="phonegap-version" value="cli-6.5.0" />
   
   <!-- <preference name="FadeSplashScreen" value="true" /> --> 
   <!-- <preference name="FadeSplashScreenDuration" value=".25" /> -->
