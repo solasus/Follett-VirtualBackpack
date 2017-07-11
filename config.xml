@@ -10,16 +10,8 @@
   
   <preference name="phonegap-version" value="cli-6.5.0" />
   
-  <!-- <preference name="FadeSplashScreen" value="true" /> --> 
-  <!-- <preference name="FadeSplashScreenDuration" value=".25" /> -->
-  <!-- <preference name="ShowSplashScreenSpinner" value="true" /> -->
-<!--
-  <feature name="LocalStorage">
-    <param name="ios-package" value="CDVLocalStorage" />
-  </feature>
-  -->
   
-    <preference name="permissions"                value="none"/>
+    <preference name="permissions" value="none"/>
 
     <!-- Customize your app and platform with the preference element. -->
     <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
@@ -33,9 +25,7 @@
     <preference name="exit-on-suspend"            value="false" />          <!-- ios: if set to true, app will terminate when home button is pressed -->
     <preference name="show-splash-screen-spinner" value="false" />          <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
     <preference name="auto-hide-splash-screen"    value="true" />           <!-- ios: if set to false, the splash screen must be hidden using a JavaScript API -->
-    <preference name="disable-cursor"             value="false" />          <!-- blackberry: prevents a mouse-icon/cursor from being displayed on the app -->
-    <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
-	<preference name="debug"    				  value="false" /> 
+ 	<preference name="debug"    				  value="false" /> 
    
      <!-- Plugins -->
   
@@ -125,15 +115,11 @@
    <icon src="images/icon-144@2x.png" width="288" height="288" /> 
 	  
    <icon src="images/icon-152.png" width="152" height="152" />
-   <icon src="images/icon-152@2x.png" width="304" height="304" /> 
-      
-   <splash src="Default@2x~universal~anyany.png" />
-   <splash src="Default@2x~universal~comany.png" />    
+   <icon src="images/icon-152@2x.png" width="304" height="304" />    
    
   </platform>
   
   <!-- Define app splash screen -->
-
   <gap:splash src="splash.png" />
 
 
