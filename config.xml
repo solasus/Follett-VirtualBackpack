@@ -8,7 +8,7 @@
   <description> Organize the eBooks that you purchased from your school's bookstore. </description>
   <author href="https://solasus.com" email="kevin@solasus.com"> Kevin Brady </author>
   
-  <preference name="phonegap-version" value="3.7.0" />
+  <preference name="phonegap-version" value="cli-6.4.0" />
   
   <!-- <preference name="FadeSplashScreen" value="true" /> --> 
   <!-- <preference name="FadeSplashScreenDuration" value=".25" /> -->
@@ -120,7 +120,7 @@
 	  
    <icon src="images/icon-152.png" width="152" height="152" />
    <icon src="images/icon-152@2x.png" width="304" height="304" /> 
-   
+      
    <splash src="Default@2x~universal~anyany.png" />
    <splash src="Default@2x~universal~comany.png" />    
    
