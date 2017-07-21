@@ -14,6 +14,15 @@
     <script type="text/javascript" src="js/jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
     <script type="text/javascript" src="js/jquery-cookie/jquery.cookie.js"></script>
     <script type="text/javascript" src="js/general.js"></script>
+	<script type="text/javascript">
+		window.addEventListener('load', function () {
+		  jQuery(document).on('click', 'a[target="_system"],a[target="_blank"]', function (e) {
+			e.preventDefault();
+			var url = this.href;
+			window.open(url,"_system");
+		  });
+		}, false);
+	</script>
 </head>
 
 <body>
