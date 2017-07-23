@@ -2,7 +2,7 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
     id        = "com.follett.virtualbackpack"
-    version   = "1.0.9">
+    version   = "1.0.10">
   
   <name>Follett Virtual Backpack</name>
   <description> Organize the eBooks that you purchased from your school's bookstore. </description>
@@ -120,8 +120,11 @@
   </platform>
   
   <!-- Define app splash screen -->
+  <splash src="splash.png" />
+  <!--
   <gap:splash src="images/splash.png" gap:platform="ios" width="480" height="480" />
   <gap:splash src="images/screen-ipad-portrait.png"  gap:platform="ios" width="768" height="1024" />
   <gap:splash src="images/screen-ipad-landscape.png" gap:platform="ios" width="1024" height="768" />
+  -->
 
 </widget>

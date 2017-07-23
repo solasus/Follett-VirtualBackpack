@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,8 +14,12 @@
     <script type="text/javascript" src="js/jquery-cookie/jquery.cookie.js"></script>
     <script type="text/javascript" src="js/general.js"></script>
 	<script type="text/javascript">
+		document.addEventListener("deviceready", onDeviceReady, false);
+		function onDeviceReady() {
+			window.open = cordova.InAppBrowser.open;
+		}
 		window.addEventListener('load', function () {
-		  jQuery(document).on('click', 'a[target="_system"],a[target="_blank"]', function (e) {
+		  jQuery(document).on('click', 'a[target="_system"],a[target="_blank"]', function(e) {
 			e.preventDefault();
 			var url = this.href;
 			window.open(url,"_system");
@@ -24,9 +27,7 @@
 		}, false);
 	</script>
 </head>
-
 <body>
-
 <!-- Start of settings page: #settings -->
 <div data-role="page" id="settings" data-theme="a">
 
