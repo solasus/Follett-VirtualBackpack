@@ -14,17 +14,28 @@
     <script type="text/javascript" src="js/jquery-cookie/jquery.cookie.js"></script>
     <script type="text/javascript" src="js/general.js"></script>
 	<script type="text/javascript">
-		document.addEventListener("deviceready", onDeviceReady, false);
-		function onDeviceReady() {
-			window.open = cordova.InAppBrowser.open;
-		}
-		window.addEventListener('load', function () {
-		  jQuery(document).on('click', 'a[target="_system"],a[target="_blank"]', function(e) {
-			e.preventDefault();
-			var url = this.href;
-			window.open(url,"_system");
-		  });
-		}, false);
+//		document.addEventListener("deviceready", onDeviceReady, false);
+//		function onDeviceReady() {
+//			window.open = cordova.InAppBrowser.open;
+//		}
+//		window.addEventListener('load', function () {
+//		  jQuery(document).on('click', 'a[target="_system"],a[target="_blank"]', function(e) {
+//			e.preventDefault();
+//			var url = this.href;
+//			window.open(url,"_system");
+//		  });
+//		}, false);
+//		
+		var iframe = $(#webview);
+		iframe.on("load",function(){
+			var allAs = iframe.contents().find('a[target="_blank"],a[target="_system"]');
+			allAs.on("click",function(e){           
+				e.preventDefault();           
+				var url = this.href;           
+				window.open(url,"_system");       
+			});
+		});
+
 	</script>
 </head>
 <body> 
