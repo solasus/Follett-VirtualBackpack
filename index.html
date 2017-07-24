@@ -26,7 +26,7 @@
 //		  });
 //		}, false);
 //		
-		var iframe = $(#webview);
+		var iframe = $('#webapp');
 		iframe.on("load",function(){
 			var allAs = iframe.contents().find('a[target="_blank"],a[target="_system"]');
 			allAs.on("click",function(e){           

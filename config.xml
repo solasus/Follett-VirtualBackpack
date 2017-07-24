@@ -120,10 +120,10 @@
   </platform>
   
   <!-- Define app splash screen -->
-  <splash src="splash.png" />
+  <splash src="images/splash.png" />
   <plugin name = "org.apache.cordova.splashscreen" source="npm">
   	<preference name="SplashScreen" value="" /> 
-  	  <preference name="SplashScreen" value="splash" />
+  	  <preference name="SplashScreen" value="images" />
       <preference name="AutoHideSplashScreen" value="true" />
       <preference name="SplashScreenDelay" value="0" />
       <preference name="SplashMaintainAspectRatio" value="true" />
