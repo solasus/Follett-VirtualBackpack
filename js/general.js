@@ -67,11 +67,12 @@ $(document).on('pagebeforeshow','#settings' ,function(e,data){
 		$('#webapp').attr('src',target);
 	});
 	
-	var iframe = document.getElementById("webapp2");
-	iframe.onload = function(){
-		iframe.contentWindow.cordova = window.cordova;
-	};
-	iframe.src = 'https://solasus.com/html/clients/da/follett_vbp/link_test.html';
+//	// link_test.html iframe on home page
+//	var iframe = document.getElementById("webapp2");
+//	iframe.onload = function(){
+//		iframe.contentWindow.cordova = window.cordova;
+//	};
+//	iframe.src = 'https://solasus.com/html/clients/da/follett_vbp/link_test.html';
 	
 });
 
