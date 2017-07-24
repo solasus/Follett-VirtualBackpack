@@ -121,6 +121,7 @@
   
   <!-- Define app splash screen -->
   <splash src="splash.png" />
+  <!--
   <plugin name = "org.apache.cordova.splashscreen" source="npm">
   	  <preference name="SplashScreen" value="images" />
       <preference name="AutoHideSplashScreen" value="true" />
@@ -129,6 +130,7 @@
       <preference name="FadeSplashScreen" value="false"/>
       <preference name="ShowSplashScreenSpinner" value="false" />
   </plugin>
+  -->
   <!--
   <gap:splash src="images/splash.png" gap:platform="ios" width="480" height="480" />
   <gap:splash src="images/screen-ipad-portrait.png"  gap:platform="ios" width="768" height="1024" />
