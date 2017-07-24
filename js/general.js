@@ -52,12 +52,12 @@ $(document).on('pagebeforeshow','#settings' ,function(e,data){
         $.mobile.navigate('#app');
 	});
 	
-	$('#app a#applink').click(function(e){ 
+	$('#app a.applink').click(function(e){ 
 		e.preventDefault();
 		var target = "https://virtualbackpack.follett.com/default.aspx";
 		var cbname = $.cookie('cbname');
 		if (cbname.substring(0, 1) == "*") { // set action for redirect to staging
-			target = "http://www.classbook.com/apps/virtualbackpackv2/default.aspx"; 
+			target = "https://virtualbackpackstage.follett.com/default.aspx"; 
 		}
 		$('#webapp').attr('src',target);
 	});

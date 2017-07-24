@@ -4,8 +4,24 @@
 <meta charset="UTF-8">
 <title>Untitled Document</title>
 
+<script type="text/javascript" src="cordova.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		document.addEventListener("deviceready", onDeviceReady, false);
+		function onDeviceReady() {
+			window.open = cordova.InAppBrowser.open;
+		}
+		window.addEventListener('load', function () {
+		  $(document).on('click', 'a[target="_system"],a[target="_blank"]', function(e) {
+			e.preventDefault();
+			var url = this.href;
+			window.open(url,"_system");
+		  });
+		}, false);
+		
+	</script>
 	
-	</head>
+</head>
 
 <body>
 	<p>page to test links.</p>
@@ -15,7 +31,7 @@
 	
 	<p><a href="index.html">index</a></p>
 	
-	<p><a href="#" onclick="window.open('http://google.com','_system');">onclick system</a>
+	<p><a href="#" onclick="window.open('http://google.com','_system');">onclick system window.open</a>
 	<p><a href="#" onclick="window.open('http://google.com','_blank');">onclick blank</a>
 	<p><a href="#" onclick="window.open('http://google.com','_parent');">onclick parent</a>
 	
