@@ -77,29 +77,29 @@ $(document).on('pagebeforeshow','#settings' ,function(e,data){
 
 $(document).on('pagebeforeshow','#forgotpass' ,function(e,data){    
 	setHeight();
-	var iframe = document.getElementById("forgotpassword");
-	iframe.onload = function(){
-		iframe.contentWindow.cordova = window.cordova;
+	var iframe2 = document.getElementById("forgotpassword");
+	iframe2.onload = function(){
+		iframe2.contentWindow.cordova = window.cordova;
 	};
-	iframe.src = 'https://virtualbackpack.follett.com/forgotpassword.aspx';
+	iframe2.src = 'https://virtualbackpack.follett.com/forgotpassword.aspx';
 });
 
 $(document).on('pagebeforeshow','#changepassword' ,function(e,data){    
 	setHeight();
-	var iframe = document.getElementById("changepassword");
-	iframe.onload = function(){
-		iframe.contentWindow.cordova = window.cordova;
+	var iframe3 = document.getElementById("changepassword");
+	iframe3.onload = function(){
+		iframe3.contentWindow.cordova = window.cordova;
 	};
-	iframe.src = 'https://virtualbackpack.follett.com/changepassword.aspx';
+	iframe3.src = 'https://virtualbackpack.follett.com/changepassword.aspx';
 });
 
 $(document).on('pagebeforeshow','#site' ,function(e,data){    
 	setHeight();
-	var iframe = document.getElementById("efollettstore");
-	iframe.onload = function(){
-		iframe.contentWindow.cordova = window.cordova;
+	var iframe4 = document.getElementById("efollettstore");
+	iframe4.onload = function(){
+		iframe4.contentWindow.cordova = window.cordova;
 	};
-	iframe.src = 'https://www.bkstr.com/efollettstore/home/';
+	iframe4.src = 'https://www.bkstr.com/efollettstore/home/';
 });
 
 

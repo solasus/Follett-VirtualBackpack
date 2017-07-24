@@ -121,6 +121,7 @@
   
   <!-- Define app splash screen -->
   <splash src="splash.png" />
+  <gap:splash src="splash.png" />
   <!--
   <plugin name = "org.apache.cordova.splashscreen" source="npm">
   	  <preference name="SplashScreen" value="images" />
