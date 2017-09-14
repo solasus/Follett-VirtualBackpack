@@ -29,15 +29,7 @@
     <preference name="exit-on-suspend"            value="false" />          <!-- ios: if set to true, app will terminate when home button is pressed -->
    
    	
-   	<plugin name="cordova-plugin-splashscreen" spec="~4.0.1" />
-    <!--
-    <preference name="show-splash-screen-spinner" value="false" />       
-    <preference name="auto-hide-splash-screen"    value="true" />   
-    -->
-    <preference name="SplashScreenDelay" value="3000" /> 
-	<preference name="AutoHideSplashScreen" value="true" />
-	<preference name="ShowSplashScreenSpinner" value="false"/>
-	<preference name="SplashScreen" value="screen"/>
+ 
 
    
      <!-- Plugins -->
