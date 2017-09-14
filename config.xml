@@ -2,7 +2,7 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
     id        = "com.follett.virtualbackpack"
-    version   = "1.0.13">
+    version   = "1.0.14">
   
   <name>Follett Virtual Backpack</name>
   <description> Organize the eBooks that you purchased from your school's bookstore. </description>
@@ -28,16 +28,20 @@
     <preference name="detect-data-types"          value="true" />           <!-- ios: controls whether data types (such as phone no. and dates) are automatically turned into links by the system -->
     <preference name="exit-on-suspend"            value="false" />          <!-- ios: if set to true, app will terminate when home button is pressed -->
    
-   	
 
 	<plugin name="cordova-plugin-splashscreen" spec="~4.0.1" />
-	<preference name="AutoHideSplashScreen" value="true" />
+  	<platform name="ios">
+	   	<splash src="res/screen/ios/Default@2x~universal~anyany.png" />
+	</platform>
+  	<preference name="SplashScreenDelay" value="3000" /> 
+  	<!--
+  	<preference name="AutoHideSplashScreen" value="true" />
 	<preference name="ShowSplashScreenSpinner" value="false"/>
 	<preference name="SplashScreen" value="screen"/>
-	<preference name="SplashScreenDelay" value="1" /> 
 	<preference name="FadeSplashScreen" value="false"/>
 	<preference name="FadeSplashScreenDuration" value="0"/>
-   	<splash src="res/screen/ios/Default@2x~universal~anyany.png" />
+  	-->
+   	
    
      <!-- Plugins -->
   
