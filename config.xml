@@ -9,10 +9,10 @@
   <author href="https://solasus.com" email="kevin@solasus.com"> Kevin Brady </author>
   
     <preference name="phonegap-version" value="cli-6.5.0" />
+    <preference name='pgb-builder-version' value='2' />
   
     <preference name="permissions" value="none"/>
     
-		<plugin name="cordova-plugin-splashscreen" source="npm" spec="~4.0.1" />
     <!-- Customize your app and platform with the preference element. -->
     <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="tablet" />      <!-- all: possible values handset, tablet, or universal -->
@@ -23,7 +23,6 @@
     <preference name="ios-statusbarstyle"         value="black-opaque" />   <!-- ios: black-translucent will appear black because the PhoneGap webview doesn't go beneath the status bar -->
     <preference name="detect-data-types"          value="true" />           <!-- ios: controls whether data types (such as phone no. and dates) are automatically turned into links by the system -->
     <preference name="exit-on-suspend"            value="false" />          <!-- ios: if set to true, app will terminate when home button is pressed -->
-   	<plugin name="cordova-plugin-splashscreen" source="npm" spec="~4.0.1" />
    
    	<plugin name="cordova-plugin-splashscreen" source="npm" spec="~4.0.1" />
     <!--
