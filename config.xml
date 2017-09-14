@@ -2,17 +2,17 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
     id        = "com.follett.virtualbackpack"
-    version   = "1.0.10">
+    version   = "1.0.12">
   
   <name>Follett Virtual Backpack</name>
   <description> Organize the eBooks that you purchased from your school's bookstore. </description>
   <author href="https://solasus.com" email="kevin@solasus.com"> Kevin Brady </author>
   
-  <preference name="phonegap-version" value="cli-6.5.0" />
-  
+    <preference name="phonegap-version" value="cli-6.5.0" />
   
     <preference name="permissions" value="none"/>
-
+    
+		<plugin name="cordova-plugin-splashscreen" source="npm" spec="~4.0.1" />
     <!-- Customize your app and platform with the preference element. -->
     <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="tablet" />      <!-- all: possible values handset, tablet, or universal -->
@@ -23,9 +23,18 @@
     <preference name="ios-statusbarstyle"         value="black-opaque" />   <!-- ios: black-translucent will appear black because the PhoneGap webview doesn't go beneath the status bar -->
     <preference name="detect-data-types"          value="true" />           <!-- ios: controls whether data types (such as phone no. and dates) are automatically turned into links by the system -->
     <preference name="exit-on-suspend"            value="false" />          <!-- ios: if set to true, app will terminate when home button is pressed -->
-    <preference name="show-splash-screen-spinner" value="false" />          <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
-    <preference name="auto-hide-splash-screen"    value="true" />           <!-- ios: if set to false, the splash screen must be hidden using a JavaScript API -->
- 	<preference name="debug"    				  value="false" /> 
+   	<plugin name="cordova-plugin-splashscreen" source="npm" spec="~4.0.1" />
+   
+   	<plugin name="cordova-plugin-splashscreen" source="npm" spec="~4.0.1" />
+    <!--
+    <preference name="show-splash-screen-spinner" value="false" />       
+    <preference name="auto-hide-splash-screen"    value="true" />   
+    -->
+    <preference name="SplashScreenDelay" value="5000" /> 
+	<preference name="AutoHideSplashScreen" value="true" />
+	<preference name="ShowSplashScreenSpinner" value="false"/>
+	<preference name="SplashScreen" value="screen"/>
+
    
      <!-- Plugins -->
   
