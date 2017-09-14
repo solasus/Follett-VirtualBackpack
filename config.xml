@@ -2,7 +2,7 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
     id        = "com.follett.virtualbackpack"
-    version   = "1.0.12">
+    version   = "1.0.13">
   
   <name>Follett Virtual Backpack</name>
   <description> Organize the eBooks that you purchased from your school's bookstore. </description>
@@ -31,14 +31,13 @@
    	
 
 	<plugin name="cordova-plugin-splashscreen" spec="~4.0.1" />
-	<splash src="splash.png" />
 	<preference name="AutoHideSplashScreen" value="true" />
 	<preference name="ShowSplashScreenSpinner" value="false"/>
 	<preference name="SplashScreen" value="screen"/>
 	<preference name="SplashScreenDelay" value="0" /> 
 	<preference name="FadeSplashScreen" value="false"/>
 	<preference name="FadeSplashScreenDuration" value="0"/>
-
+   	<splash src="splash.png" />
    
      <!-- Plugins -->
   
@@ -127,23 +126,6 @@
    <icon src="images/icon-152@2x.png" width="304" height="304" />    
    
   </platform>
-  
-  <!-- Define app splash screen -->
 
-  <!--
-  <plugin name = "org.apache.cordova.splashscreen" source="npm">
-  	  <preference name="SplashScreen" value="images" />
-      <preference name="AutoHideSplashScreen" value="true" />
-      <preference name="SplashScreenDelay" value="1" />
-      <preference name="SplashMaintainAspectRatio" value="true" />
-      <preference name="FadeSplashScreen" value="false"/>
-      <preference name="ShowSplashScreenSpinner" value="false" />
-  </plugin>
-  -->
-  <!--
-  <gap:splash src="images/splash.png" gap:platform="ios" width="480" height="480" />
-  <gap:splash src="images/screen-ipad-portrait.png"  gap:platform="ios" width="768" height="1024" />
-  <gap:splash src="images/screen-ipad-landscape.png" gap:platform="ios" width="1024" height="768" />
-  -->
 
 </widget>
