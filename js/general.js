@@ -6,6 +6,9 @@ function setHeight(){
 }
 
 function cbLogin() {
+	$('.main-content').html('');
+	$('#app .main-content').html('<iframe id="webapp" class="webapp" src=#"></iframe>');
+	setHeight();
 	var cbname = $.cookie('cbname');
 	var cbpw = $.cookie('cbpw');
 	if (!cbname) { // no cookie
@@ -76,7 +79,9 @@ $(document).on('pagebeforeshow','#settings' ,function(e,data){
 	
 });
 
-$(document).on('pagebeforeshow','#forgotpass' ,function(e,data){    
+$(document).on('pagebeforeshow','#forgotpass' ,function(e,data){  
+	$('.main-content').html('');
+	$('#forgotpass .main-content').html('<iframe id="forgotpassword" class="webapp" src=#"></iframe>');
 	setHeight();
 	var iframe2 = document.getElementById("forgotpassword");
 	iframe2.onload = function(){
@@ -85,7 +90,9 @@ $(document).on('pagebeforeshow','#forgotpass' ,function(e,data){
 	iframe2.src = 'https://virtualbackpack.follett.com/forgotpassword.aspx';
 });
 
-$(document).on('pagebeforeshow','#changepassword' ,function(e,data){    
+$(document).on('pagebeforeshow','#changepass' ,function(e,data){ 
+	$('.main-content').html('');
+	$('#changepass .main-content').html('<iframe id="changepassword" class="webapp" src=#"></iframe>');
 	setHeight();
 	var iframe3 = document.getElementById("changepassword");
 	iframe3.onload = function(){
@@ -94,7 +101,8 @@ $(document).on('pagebeforeshow','#changepassword' ,function(e,data){
 	iframe3.src = 'https://virtualbackpack.follett.com/changepassword.aspx';
 });
 
-$(document).on('pagebeforeshow','#site' ,function(e,data){    
+$(document).on('pagebeforeshow','#site' ,function(e,data){  
+	$('#site .main-content').html('<iframe id="efollettstore" class="webapp" src=#"></iframe>');
 	setHeight();
 	var iframe4 = document.getElementById("efollettstore");
 	iframe4.onload = function(){

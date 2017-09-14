@@ -25,17 +25,6 @@
 			window.open(url,"_system");
 		  });
 		}, false);
-		
-//		var iframe = $('#webapp');
-//		iframe.on("load",function(){
-//			var allAs = iframe.contents().find('a[target="_blank"],a[target="_system"]');
-//			allAs.on("click",function(e){           
-//				e.preventDefault();           
-//				var url = this.href;           
-//				window.open(url,"_system");       
-//			});
-//		});
-	
 
 	</script>
 </head>
@@ -64,7 +53,7 @@
               <input type="submit" value="Submit" data-inline="true" />
             </p>
             <p>&nbsp; </p>
-            <p><a href="#pass">Forgot Password</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#changepass">Change Password</a> </p>
+            <p><a href="#forgotpass">Forgot Password</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#changepass">Change Password</a> </p>
            
             <!--
             <p><a href="https://solasus.com/html/clients/da/follett_vbp/link_test.html">link test</a> </p>
@@ -89,12 +78,12 @@
         <h1>Virtual Backpack</h1>
 	</div><!-- /header -->
 	<div role="main" class="ui-content webapp">
-        <iframe id="webapp" class="webapp" src="#"></iframe>		
+       <div class="main-content"></div>
 	</div><!-- /content -->
 	<!-- <div data-role="footer"></div><!-- /footer -->
 </div><!-- /page app -->
 
-<!-- Start of app page: #pass -->
+<!-- Start of app page: #forgotpass -->
 <div data-role="page" id="forgotpass" data-theme="b">
 	<div data-role="header">
 		<a href="#app" class="applink ui-btn ui-btn-left ui-icon-home ui-btn-icon-notext ui-corner-all">Home</a>
@@ -102,7 +91,7 @@
         <h1>Virtual Backpack - Forgot Password</h1>
 	</div><!-- /header -->
 	<div role="main" class="ui-content webapp">
-        <iframe id="forgotpassword" class="webapp" src="#"></iframe>		
+       <div class="main-content"></div>
 	</div><!-- /content -->
 	<!-- <div data-role="footer"></div><!-- /footer -->
 </div><!-- /page pass -->
@@ -115,7 +104,7 @@
         <h1>Virtual Backpack - Change Password</h1>
 	</div><!-- /header -->
 	<div role="main" class="ui-content webapp">
-        <iframe id="changepassword" class="webapp" src="#"></iframe>
+       <div class="main-content"></div>
 	</div><!-- /content -->
 	<!-- <div data-role="footer"></div><!-- /footer -->
 </div><!-- /page pass -->
@@ -128,7 +117,8 @@
         <h1>ClassBook.com</h1>
 	</div><!-- /header -->
 	<div role="main" class="ui-content webapp">
-        <iframe id="efollettstore" class="webapp" src="#"></iframe>		
+       <div class="main-content"></div>
+       <!-- <iframe id="efollettstore" class="webapp" src="#"></iframe>	-->
 	</div><!-- /content -->
 	<!-- <div data-role="footer"></div><!-- /footer -->
 </div><!-- /page pass -->
