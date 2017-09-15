@@ -26,71 +26,7 @@
     <preference name="stay-in-webview"            value="true" />          <!-- ios: external links should open in the default browser, 'true' would use the webview the app lives in -->
     <preference name="ios-statusbarstyle"         value="black-opaque" />   <!-- ios: black-translucent will appear black because the PhoneGap webview doesn't go beneath the status bar -->
     <preference name="detect-data-types"          value="true" />           <!-- ios: controls whether data types (such as phone no. and dates) are automatically turned into links by the system -->
-    <preference name="exit-on-suspend"            value="false" />          <!-- ios: if set to true, app will terminate when home button is pressed -->
-   
-
-	<plugin name="cordova-plugin-splashscreen" spec="~4.0.1" />
-  	<platform name="ios">
-  		
-    <!-- There are two mechanisms for showing launch images.
-      -- Legacy method (supports all devices except iPad Pro 12.9):
-      -- Note: Images are determined by width and height. The following are supported -->
-    <splash src="res/screen/ios/Default~iphone.png" width="320" height="480"/>
-    <splash src="res/screen/ios/Default@2x~iphone.png" width="640" height="960"/>
-    <splash src="res/screen/ios/Default-Portrait~ipad.png" width="768" height="1024"/>
-    <splash src="res/screen/ios/Default-Portrait@2x~ipad.png" width="1536" height="2048"/>
-    <splash src="res/screen/ios/Default-Landscape~ipad.png" width="1024" height="768"/>
-    <splash src="res/screen/ios/Default-Landscape@2x~ipad.png" width="2048" height="1536"/>
-    <splash src="res/screen/ios/Default-568h@2x~iphone.png" width="640" height="1136"/>
-    <splash src="res/screen/ios/Default-667h.png" width="750" height="1334"/>
-    <splash src="res/screen/ios/Default-736h.png" width="1242" height="2208"/>
-    <splash src="res/screen/ios/Default-Landscape-736h.png" width="2208" height="1242"/>
-    <!-- Storyboard method (supports all devices):
-      -- Important: If you use the storyboard method, legacy images are 
-      -- copied but ignored.
-      -- Note: images are determined by scale, idiom, and size traits. The following
-      -- are suggested based on current device form factors -->
-    <splash src="res/screen/ios/Default@2x~universal~anyany.png" />
-    <splash src="res/screen/ios/Default@2x~universal~comany.png" />
-    <splash src="res/screen/ios/Default@2x~universal~comcom.png" />
-    <splash src="res/screen/ios/Default@3x~universal~anyany.png" />
-    <splash src="res/screen/ios/Default@3x~universal~anycom.png" />
-    <splash src="res/screen/ios/Default@3x~universal~comany.png" />
-
-	</platform>
-  	<preference name="SplashScreenDelay" value="2000" /> 
-  	<!--
-  	<preference name="AutoHideSplashScreen" value="true" />
-	<preference name="ShowSplashScreenSpinner" value="false"/>
-	<preference name="SplashScreen" value="screen"/>
-	<preference name="FadeSplashScreen" value="false"/>
-	<preference name="FadeSplashScreenDuration" value="0"/>
-  	-->
-   	
-   
-     <!-- Plugins -->
-  
-  <!--
-  <preference name="AutoHideSplashScreen" value="true" />
-  <preference name="AllowInlineMediaPlayback" value="false" />
-  <preference name="BackupWebStorage" value="cloud" />
-  <preference name="SuppressesIncrementalRendering" value="false" />
-  <preference name="TopActivityIndicator" value="gray" />
-  <preference name="GapBetweenPages" value="0" />
-  <preference name="PageLength" value="0" />
-  <preference name="PaginationBreakingMode" value="page" />
-  <preference name="PaginationMode" value="unpaginated" />
-  <preference name="InAppBrowserStorageEnabled" value="true" />
-  <preference name="UIStatusBarHidden" value="true" />
-  <preference name="KeyboardDisplayRequiresUserAction" value="true" />
-  <preference name="MediaPlaybackRequiresUserAction" value="false" />
-  -->
-  
-  <!-- 
-    <gap:config-file platform="ios" parent="UIStatusBarHidden" overwrite="true">
-    <true/>
-  </gap:config-file>
-  -->
+    <preference name="exit-on-suspend"            value="false" />          <!-- ios: if set to true, app will terminate when home button is pressed -->   	
   
 	<!-- Added the following intents to support the removal of whitelist code from base cordova to a plugin -->
 	<!-- Whitelist configuration. Refer to https://cordova.apache.org/docs/en/edge/guide_appdev_whitelist_index.md.html -->
@@ -115,46 +51,66 @@
 	<allow-intent href="itms:*" />
 	<allow-intent href="itms-apps:*" />
 
-  <!-- Define app icon for each platform. --> 
+  
+  <plugin name="cordova-plugin-splashscreen" spec="~4.0.1" />
+  <!-- Define app icons and splash for each platform. --> 
   <!--App icons -->
   <platform name="ios"> 
-   <icon src="images/icon-20.png" width="20" height="20" />
-   <icon src="images/icon-20@2x.png" width="40" height="40" />
-   <icon src="images/icon-20@3x.png" width="60" height="60" />
-	  
-   <icon src="images/icon-29.png" width="29" height="29" />
-   <icon src="images/icon-29@2x.png" width="58" height="58" />
-   <icon src="images/icon-29@3x.png" width="87" height="87" />
-	  
-   <icon src="images/icon-40.png" width="40" height="40" />
-   <icon src="images/icon-40@2x.png" width="80" height="80" />
-   <icon src="images/icon-40@3x.png" width="120" height="120" />
-	  
-   <icon src="images/icon-50.png" width="50" height="50" />
-   <icon src="images/icon-50@2x.png" width="100" height="100" />
-	  
-   <icon src="images/icon-57.png" width="57" height="57" />
-   <icon src="images/icon-57@2x.png" width="114" height="114" /> 
-	  
-   <icon src="images/icon-60.png" width="60" height="60" />
-   <icon src="images/icon-60@2x.png" width="120" height="120" />
-   <icon src="images/icon-60@3x.png" width="180" height="180" />
-	  
-   <icon src="images/icon-72.png" width="72" height="72" />
-   <icon src="images/icon-72@2x.png" width="144" height="144" /> 
-	  
-   <icon src="images/icon-76.png" width="76" height="76" />
-   <icon src="images/icon-76@2x.png" width="152" height="152" /> 
-	  
-   <icon src="images/icon-83.5@2x.png" width="167" height="167" />  
-	  
-   <icon src="images/icon-144.png" width="144" height="144" />
-   <icon src="images/icon-144@2x.png" width="288" height="288" /> 
-	  
-   <icon src="images/icon-152.png" width="152" height="152" />
-   <icon src="images/icon-152@2x.png" width="304" height="304" />    
+	<icon src="images/icon-20.png" width="20" height="20" />
+	<icon src="images/icon-20@2x.png" width="40" height="40" />
+	<icon src="images/icon-20@3x.png" width="60" height="60" />
+
+	<icon src="images/icon-29.png" width="29" height="29" />
+	<icon src="images/icon-29@2x.png" width="58" height="58" />
+	<icon src="images/icon-29@3x.png" width="87" height="87" />
+
+	<icon src="images/icon-40.png" width="40" height="40" />
+	<icon src="images/icon-40@2x.png" width="80" height="80" />
+	<icon src="images/icon-40@3x.png" width="120" height="120" />
+
+	<icon src="images/icon-50.png" width="50" height="50" />
+	<icon src="images/icon-50@2x.png" width="100" height="100" />
+
+	<icon src="images/icon-57.png" width="57" height="57" />
+	<icon src="images/icon-57@2x.png" width="114" height="114" /> 
+
+	<icon src="images/icon-60.png" width="60" height="60" />
+	<icon src="images/icon-60@2x.png" width="120" height="120" />
+	<icon src="images/icon-60@3x.png" width="180" height="180" />
+
+	<icon src="images/icon-72.png" width="72" height="72" />
+	<icon src="images/icon-72@2x.png" width="144" height="144" /> 
+
+	<icon src="images/icon-76.png" width="76" height="76" />
+	<icon src="images/icon-76@2x.png" width="152" height="152" /> 
+
+	<icon src="images/icon-83.5@2x.png" width="167" height="167" />  
+
+	<icon src="images/icon-144.png" width="144" height="144" />
+	<icon src="images/icon-144@2x.png" width="288" height="288" /> 
+
+	<icon src="images/icon-152.png" width="152" height="152" />
+	<icon src="images/icon-152@2x.png" width="304" height="304" />    
+   
+	<splash src="res/screen/ios/Default~iphone.png" width="320" height="480" />
+	<splash src="res/screen/ios/Default@2x~iphone.png" width="640" height="960" />
+	<splash src="res/screen/ios/Default-Portrait~ipad.png" width="768" height="1024" />
+	<splash src="res/screen/ios/Default-Portrait@2x~ipad.png" width="1536" height="2048" />
+	<splash src="res/screen/ios/Default-Landscape~ipad.png" width="1024" height="768" />
+	<splash src="res/screen/ios/Default-Landscape@2x~ipad.png" width="2048" height="1536" />
+	<splash src="res/screen/ios/Default-568h@2x~iphone.png" width="640" height="1136" />
+	<splash src="res/screen/ios/Default-667h.png" width="750" height="1334" />
+	<splash src="res/screen/ios/Default-736h.png" width="1242" height="2208" />
+	<splash src="res/screen/ios/Default-Landscape-736h.png" width="2208" height="1242" />
+
+	<splash src="res/screen/ios/Default@2x~universal~anyany.png" />
+	<splash src="res/screen/ios/Default@2x~universal~comany.png" />
+	<splash src="res/screen/ios/Default@2x~universal~comcom.png" />
+	<splash src="res/screen/ios/Default@3x~universal~anyany.png" />
+	<splash src="res/screen/ios/Default@3x~universal~anycom.png" />
+	<splash src="res/screen/ios/Default@3x~universal~comany.png" />
    
   </platform>
-
+  <preference name="SplashScreenDelay" value="2000" /> 
 
 </widget>
