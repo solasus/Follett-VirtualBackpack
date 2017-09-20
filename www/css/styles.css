@@ -1,10 +1,39 @@
 /* CSS Document */
 
 .ui-content .content { padding:0; }
-.webapp.ui-content { padding:0; height:100%; }
-iframe.webapp { border:0; width:100%; }
-div.middle { max-width:525px; margin:0 auto; }
+.webapp.ui-content { padding:0; height:100%; margin-top: 40px; }
+iframe.webapp { border:0; width:100%; position: fixed; }
+div.middle { max-width:525px; margin:40px auto 0; }
 div.middle .ui-input-text { max-width:360px; }
 .instructions { margin-top:75px; }
 #helpfile { border:0; width:700px; height:600px; overflow-x:hidden; overflow-y:scroll; }
-.ui-page { padding-top: 20px; background: #ffffff; }
+.ui-page { padding-top: 20px; background:#fff url(../images/bg_page.jpg) repeat; }
+
+div.ui-header { 
+    border-top: solid 20px #fff !important;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+div.ui-footer {
+    background: #464646 !important;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    border: 0 none;
+    z-index: 99;
+	text-shadow: none !important;
+	color:#fff !important;
+}
+
+img.footer_logo {
+    height: 18px;
+    margin-top: 22px;
+    margin-left: 11px;
+}
+
+a.link_classbook.ui-btn-corner-all {
+    margin: 50px auto auto 40px !important;
+}
