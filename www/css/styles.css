@@ -26,6 +26,8 @@ div.ui-footer {
     z-index: 99;
 	text-shadow: none !important;
 	color:#fff !important;
+	max-width: 70%;
+    text-align: right;
 }
 div.ui-footer p.contact {
 	position: absolute;
