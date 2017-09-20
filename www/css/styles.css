@@ -27,6 +27,17 @@ div.ui-footer {
 	text-shadow: none !important;
 	color:#fff !important;
 }
+div.ui-footer p.contact {
+	position: absolute;
+	top: 25%;
+	transform: translateY(-25%);
+	font-size: small;
+	right: 10px;
+}
+div.ui-footer p.contact a.ui-link {
+	color: #fff;
+	text-decoration: none;
+}
 
 img.footer_logo {
     height: 18px;
