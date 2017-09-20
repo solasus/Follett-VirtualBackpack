@@ -26,8 +26,6 @@ div.ui-footer {
     z-index: 99;
 	text-shadow: none !important;
 	color:#fff !important;
-	max-width: 70%;
-    text-align: right;
 }
 div.ui-footer p.contact {
 	position: absolute;
@@ -35,6 +33,8 @@ div.ui-footer p.contact {
 	transform: translateY(-25%);
 	font-size: small;
 	right: 10px;
+	max-width: 70%;
+    text-align: right;
 }
 div.ui-footer p.contact a.ui-link {
 	color: #fff;
